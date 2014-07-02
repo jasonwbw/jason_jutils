@@ -1,4 +1,4 @@
-package personal.jason.utils.io;
+package personal.jason.utils.io.reader;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
