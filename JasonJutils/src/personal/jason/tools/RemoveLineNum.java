@@ -18,6 +18,11 @@ public class RemoveLineNum {
 		br = new BufferedReader(new FileReader(fileRead));
 	}
 	
+	/**
+	 * get correct source code
+	 * @return
+	 * @throws Exception
+	 */
 	public String getSourceCode() throws Exception{
 		String s = br.readLine();
 		while ( s != null) {

@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
 /**
- * 完成按照编码格式进行一行行的读取
+ * Read file by line
  * 
  * @author Jasonwbw@yahoo.com
  */
@@ -21,6 +21,11 @@ public class LineReader {
 		this.reader = new BufferedReader(new InputStreamReader(new FileInputStream(filename), encode));
 	}
 	
+	/**
+	 * get next line from file
+	 * @return next line or null if read the file end
+	 * @throws IOException
+	 */
 	public String getNextLine() throws IOException{
 		String tmpString = this.reader.readLine();
 		if (tmpString == null) {

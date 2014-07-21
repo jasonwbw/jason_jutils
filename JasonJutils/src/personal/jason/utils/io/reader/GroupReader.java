@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * 完成按照编码格式、行间隔符（单独占一行），从文件中读取一组数据
+ * Read group lines that split by a give li separator
  * 
  * @author Jasonwbw@yahoo.com
  */
@@ -25,6 +25,11 @@ public class GroupReader {
 		this.lineSeparator = lineSeparator;
 	}
 	
+	/**
+	 * read next group
+	 * @return group text list by line, or null if file end
+	 * @throws IOException
+	 */
 	public List<String> readGroupLines() throws IOException{
 		String tempString = this.reader.readLine();
 		List<String> text = new LinkedList<String>();
